@@ -1,13 +1,13 @@
 import './MainPage.css'
 
-import CsharpIcon from '../../assets/Csharp.svg'
-import JavaIcon from '../../assets/java.svg'
-import AzureIcon from '../../assets/Microsoft_Azure.svg'
-import MongoDbIcon from '../../assets/mongodb.svg'
-import NodeJsIcon from '../../assets/nodejs.svg'
-import PythonIcon from '../../assets/python.svg'
-import ReactIcon from '../../assets/React-icon.svg'
-import TSIcon from '../../assets/typescript.svg'
+import CsharpIcon from '../../assets/experienceIcons/Csharp.svg'
+import JavaIcon from '../../assets/experienceIcons/java.svg'
+import AzureIcon from '../../assets/experienceIcons/Microsoft_Azure.svg'
+import MongoDbIcon from '../../assets/experienceIcons/mongodb.svg'
+import NodeJsIcon from '../../assets/experienceIcons/nodejs.svg'
+import PythonIcon from '../../assets/experienceIcons/python.svg'
+import ReactIcon from '../../assets/experienceIcons/React-icon.svg'
+import TSIcon from '../../assets/experienceIcons/typescript.svg'
 import Me from '../../assets/me.jpg'
 
 const listOfExperience: string[] = [
