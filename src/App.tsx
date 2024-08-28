@@ -4,6 +4,7 @@ import React from 'react'
 import './App.css'
 
 import MainPage from './Components/MainPage/MainPage'
+import CareerPage from './Components/CareerPage/CareerPage'
 
 const App = () => {
   const navigate = useNavigate();
@@ -16,9 +17,11 @@ const App = () => {
     <div className='app-grid-container'>
       <div className='navigation-bar'>
         <button className='navigation-bar-item' id='main' onClick={linkClick}>Main</button>
+        <button className='navigation-bar-item' id='career' onClick={linkClick}>Career</button>
       </div>
       <Routes>
         <Route path='/main' element={<MainPage />} />
+        <Route path='/career' element={<CareerPage />} />
         <Route path='*' element={<MainPage />} />
       </Routes>
       <div className='footer-flex'>
