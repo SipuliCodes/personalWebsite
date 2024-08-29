@@ -5,6 +5,7 @@ import './App.css'
 import MainPage from './Components/MainPage/MainPage'
 import CareerPage from './Components/CareerPage/CareerPage'
 import NavigationBar from './Components/NavigationBar/NavigationBar'
+import AchievementsPage from './Components/AchievementsPage/AchievementsPage'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/main' element={<MainPage />} />
         <Route path='/career' element={<CareerPage />} />
+        <Route path='/achievements' element={<AchievementsPage />} />
         <Route path='*' element={<MainPage />} />
       </Routes>
       <div className='footer-flex'>

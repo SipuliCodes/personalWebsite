@@ -35,7 +35,8 @@ const NavigationBar = () => {
   return (
     <div className={`navigation-bar ${navBarClass}`}>
         <button className='navigation-bar-item' id='main' onClick={linkClick}>Main</button>
-        <button className='navigation-bar-item' id='career' onClick={linkClick}>Career</button>
+      <button className='navigation-bar-item' id='career' onClick={linkClick}>Career</button>
+      <button className='navigation-bar-item' id='achievements' onClick={linkClick}>Achievements</button>
       </div>
   )
 }

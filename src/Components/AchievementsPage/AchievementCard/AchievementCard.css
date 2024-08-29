@@ -1,0 +1,95 @@
+.achievement-card {
+  width: 80%;
+  background-color: #FFF;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "name image-one"
+  "description image-one";
+}
+
+.reverse {
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "image-one name"
+    "image-one description";
+}
+
+@media (max-width: 850px) {
+  .achievement-card {
+    width: 80%;
+    background-color: #FFF;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name"
+      "description"
+      "image-one";
+  }
+    .reverse {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "name"
+        "description"
+        "image-one";
+    }
+}
+
+.two-images {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "image-one name image-two"
+  "image-one description image-two";
+}
+
+@media (max-width: 1180px) {
+  .two-images {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "name image-one"
+      "description image-two";
+    }
+}
+
+@media (max-width: 850px) {
+  .two-images {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "name" 
+      "image-one"
+      "description" 
+      "image-two";
+  }
+}
+
+.achievement-card-name {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.achievement-card-description {
+  margin: 1rem;
+}
+
+.achievement-card-image {
+  width: 20rem;
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .achievement-card-image {
+      width: 100%;
+    }
+}
+
+.image-one {
+  grid-area: image-one;
+}
+
+.image-two {
+  grid-area: image-two;
+}
