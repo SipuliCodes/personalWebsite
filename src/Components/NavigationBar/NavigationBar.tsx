@@ -8,6 +8,7 @@ const NavigationBar = () => {
 
   const [lastScrollTop, setLastScrollTop] = useState(0)
   const [navBarClass, setNavBarClass] = useState('')
+  const [activeButton, setActiveButton] = useState('main')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,14 +31,15 @@ const NavigationBar = () => {
   }, [lastScrollTop])
 
   const linkClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setActiveButton(event.currentTarget.id)
     navigate(`/${event.currentTarget.id}`)
   }
   return (
     <div className={`navigation-bar ${navBarClass}`}>
-        <button className='navigation-bar-item' id='main' onClick={linkClick}>Main</button>
-      <button className='navigation-bar-item' id='career' onClick={linkClick}>Career</button>
-      <button className='navigation-bar-item' id='achievements' onClick={linkClick}>Achievements</button>
-      </div>
+      <button className={`navigation-bar-item ${activeButton === 'main' ? 'active' : ''}`} id='main' onClick={linkClick}>Main</button>
+      <button className={`navigation-bar-item ${activeButton === 'career' ? 'active' : ''}`} id='career' onClick={linkClick}>Career</button>
+      <button className={`navigation-bar-item ${activeButton === 'achievements' ? 'active' : ''}`} id='achievements' onClick={linkClick}>Achievements</button>
+    </div>
   )
 }
 

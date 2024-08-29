@@ -14,6 +14,11 @@
   margin: 0.5rem;
   background-color: #FFF;
   border: none;
+  color: #000;
+}
+
+.active {
+  font-weight: bold;
 }
 
 .navigation-bar-item:hover {
