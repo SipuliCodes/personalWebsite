@@ -69,15 +69,3 @@
 .main-page-details-image {
   width: 12rem;
 }
-
-.contact-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 10rem;
-}
-
-.contact-bar-link {
-  color: #009e6f;
-  text-decoration: none;
-}

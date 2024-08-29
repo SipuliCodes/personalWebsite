@@ -32,9 +32,45 @@
 .footer-flex {
   display: flex;
   justify-content: center;
+  height: 10vh;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: center;
   border-top: 1px solid #e3e3e3;
   width: 70vw;
+}
+
+@media (max-width: 620px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer-flex {
+    min-height: 4rem;
+  }
+}
+
+.copyright {
+  margin: 0;
+}
+
+.find-me {
+  margin: 0
+}
+
+.contact-bar {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+}
+
+.contact-bar-link {
+  color: #009e6f;
+  text-decoration: none;
 }

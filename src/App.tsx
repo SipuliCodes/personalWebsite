@@ -18,7 +18,12 @@ const App = () => {
       </Routes>
       <div className='footer-flex'>
         <div className='footer'>
-          <h3>Sisu Vepsäläinen © 2024</h3>
+          <h3 className='copyright'>Sisu Vepsäläinen © 2024</h3>
+          <div className="contact-bar">
+            <h4 className='find-me'>Find me:</h4>
+            <a className='contact-bar-link' href="https://www.linkedin.com/in/sisu-veps%C3%A4l%C3%A4inen-654b02238/">LinkedIn</a>
+            <a className='contact-bar-link' href="https://github.com/SipuliCodes">GitHub</a>
+        </div>
         </div>
       </div>
     </div>
