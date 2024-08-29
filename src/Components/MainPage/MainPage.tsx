@@ -31,7 +31,7 @@ const MainPage = () => {
         </div>
       </div>
       <div className='main-page-details-flex'>
-        <h2>Sisu Vepsälinen</h2>
+        <h2>Sisu Vepsäläinen</h2>
         <img className='main-page-details-image' src={Me}></img>
         <h3>ICT student at University of Turku</h3>
       </div>
