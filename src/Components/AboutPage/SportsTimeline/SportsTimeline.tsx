@@ -36,6 +36,7 @@ const SportsTimeline = () => {
         end: maxDate,
         max: maxDate,
         zoomMax: differenceInMilliseconds,
+        zoomMin: 3 * 31556952000,
         height: 240,
         width: '95vw',
         margin: {
