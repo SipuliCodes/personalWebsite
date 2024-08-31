@@ -7,6 +7,7 @@ import CareerPage from './Components/CareerPage/CareerPage'
 import NavigationBar from './Components/NavigationBar/NavigationBar'
 import AchievementsPage from './Components/AchievementsPage/AchievementsPage'
 import AboutPage from './Components/AboutPage/AboutPage'
+import EducationPage from './Components/EducationPage/EducationPage'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
       <Routes>
         <Route path='/main' element={<MainPage />} />
         <Route path='/career' element={<CareerPage />} />
+        <Route path='/education' element={<EducationPage />} />
         <Route path='/achievements' element={<AchievementsPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='*' element={<MainPage />} />

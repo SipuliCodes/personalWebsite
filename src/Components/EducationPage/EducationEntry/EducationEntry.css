@@ -1,0 +1,55 @@
+.education-entry-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "details logo"
+    "description logo";
+  background-color: #fff;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .education-entry-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "details logo"
+    "description description";
+  }
+}
+
+.education-entry-details {
+  grid-area: details;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.education-entry-company-name, .education-entry-date {
+  margin: 0;
+}
+
+.education-entry-work-description {
+  grid-area: description;
+  margin: 1rem;
+  margin-top: 0;
+}
+
+.education-entry-company-logo-container {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.education-entry-company-logo {
+  height: 2.5rem;
+}
+
+@media (max-width: 560px) {
+  .education-entry-company-logo {
+    height: 1.5rem;
+  }
+}
