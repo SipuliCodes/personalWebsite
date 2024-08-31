@@ -17,6 +17,12 @@
   color: #000;
 }
 
+@media (max-width: 500px) {
+  .navigation-bar-item {
+    padding: 0;
+  }
+}
+
 .active {
   font-weight: bold;
 }
