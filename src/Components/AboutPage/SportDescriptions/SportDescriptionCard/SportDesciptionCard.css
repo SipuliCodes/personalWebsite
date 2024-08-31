@@ -1,0 +1,17 @@
+.sport-description-card-flex {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  align-items: center;
+  background-color: #FFF;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.sport-description-card-sport {
+  margin: 0;
+}
+
+.sport-description-card-description {
+  margin: 1rem;
+}

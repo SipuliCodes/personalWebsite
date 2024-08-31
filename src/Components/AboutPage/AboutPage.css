@@ -1,0 +1,9 @@
+.about-page-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page-description {
+  width: 80%;
+}

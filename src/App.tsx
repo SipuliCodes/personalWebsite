@@ -6,6 +6,7 @@ import MainPage from './Components/MainPage/MainPage'
 import CareerPage from './Components/CareerPage/CareerPage'
 import NavigationBar from './Components/NavigationBar/NavigationBar'
 import AchievementsPage from './Components/AchievementsPage/AchievementsPage'
+import AboutPage from './Components/AboutPage/AboutPage'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/main' element={<MainPage />} />
         <Route path='/career' element={<CareerPage />} />
         <Route path='/achievements' element={<AchievementsPage />} />
+        <Route path='/about' element={<AboutPage />} />
         <Route path='*' element={<MainPage />} />
       </Routes>
       <div className='footer-flex'>
